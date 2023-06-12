@@ -1,0 +1,121 @@
+body {
+  background-color: hsl(257, 40%, 49%);
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+h2 {
+  font-family: "Poppins", sans-serif;
+}
+main {
+  padding: 40px;
+  background-image: url(images/bg-desktop.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 90vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1440px;
+}
+
+.logo img {
+  width: 200px;
+  margin-bottom: 20px;
+}
+.image {
+  display: flex;
+  margin-top: 50px;
+}
+.image img {
+  margin-right: 50px;
+  max-width: 100%;
+}
+
+.image .info {
+  max-width: 450px;
+  flex: 1;
+}
+.image .info h2 {
+  font-size: 2rem;
+  color: #fff;
+}
+.image .info p {
+  color: #d3d3d3;
+  line-height: 1.6;
+}
+.image .info button {
+  width: 150px;
+  padding: 12px 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: 0;
+  outline: 0;
+  background-color: #fff;
+  color: hsl(257, 40%, 49%);
+  box-shadow: 0 5px 15px #292929;
+}
+.image .info button:hover {
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .image {
+    flex-direction: column;
+    margin: auto;
+  }
+  .image img,
+  .info {
+    margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  .image {
+    text-align: center;
+  }
+}
+.social {
+  margin-left: auto;
+  display: inline-flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.social i {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.social i:hover {
+  color: hsl(300, 100%, 67%);
+  border-color: hsl(300, 100%, 67%);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .social {
+    margin: 30px auto;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.attribution a {
+  color: hsl(293, 100%, 75%);
+}
